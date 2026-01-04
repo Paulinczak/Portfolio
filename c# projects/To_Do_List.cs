@@ -59,7 +59,7 @@ public class HelloWorld
                 Console.WriteLine("Podaj numer zadanie, które ma zostać usunięte:");
                 int numer= int.Parse(Console.ReadLine());
                 numer = numer-1; 
-                if (numer != -1)
+                if (numer>=0 && numer<ListaZadan.Count)
                 {
                     ListaZadan.RemoveAt(numer);
                     Statusy.RemoveAt(numer);
