@@ -62,6 +62,7 @@ public class HelloWorld
                 if (numer != -1)
                 {
                     ListaZadan.RemoveAt(numer);
+                    Statusy.RemoveAt(numer);
                     Console.WriteLine("Zadanie usunięto pomyślnie.");
                 }
                 else
