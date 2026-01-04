@@ -75,7 +75,7 @@ public class HelloWorld
                 Console.WriteLine("Podaj numer zadania, którego status ma zostać zmieniony na wykonany:");
                 int numer= int.Parse(Console.ReadLine());
                 numer = numer-1; 
-                if (numer != -1)
+                if (numer>=0 && numer<ListaZadan.Count)
                 {
                     Statusy[numer]= true;
                     Console.WriteLine("Status zmieniono pomyślnie");
